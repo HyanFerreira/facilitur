@@ -49,8 +49,6 @@ O **FaciliTur** é um sistema que centraliza os **eventos da cidade** em um só 
 
 ## 🏗️ Arquitetura (proposta inicial)
 
-> **Stack sugerida (ajustável ao time):**
-
 * **Backend:** Java + Spring Boot
 * **Frontend:** React + Vite + TailwindCSS
 * **Banco:** MySQL 8
