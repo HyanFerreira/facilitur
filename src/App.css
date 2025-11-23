@@ -527,16 +527,22 @@ html,
 }
 
 /* =========================
-  PARCEIROS CTA (blob)
+  PARCEIROS CTA (blob + background)
 ========================= */
 
 .partner-cta {
   position: relative;
-  background: var(--white-light);
   min-height: 420px;
   display: flex;
   align-items: center;
   overflow: hidden;
+
+  /* fundo com imagem */
+  background-color: var(--white-light);
+  background-image: var(--partner-bg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
 }
 
 /* “retângulo + meia-lua” colado na esquerda */
@@ -545,14 +551,12 @@ html,
   position: absolute;
   left: 0;
   top: 0;
-
   height: 100%;
   width: clamp(420px, 58vw, 720px);
-  /* controla quanto o laranja entra */
-
   background: var(--orange);
   border-top-right-radius: 999px;
   border-bottom-right-radius: 999px;
+  z-index: 0;
 }
 
 /* texto por cima */
@@ -564,12 +568,9 @@ html,
 .partner-cta__content {
   color: var(--white);
   max-width: 420px;
-
-  /* espaço interno dentro do blob */
   padding-left: 40px;
 }
 
-/* (mantém tuas configs de título/texto/botão) */
 .partner-cta__title {
   font-size: clamp(26px, 3vw, 38px);
   font-weight: 900;
@@ -602,6 +603,8 @@ html,
   .partner-cta {
     min-height: 360px;
     padding: 40px 0;
+    background-position: center;
+    /* melhor no mobile */
   }
 
   .partner-cta::before {
@@ -760,6 +763,23 @@ html,
   transform: translateX(8px) translateY(-6px);
 }
 
+.newsletter__alert {
+  font-size: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.newsletter__alert--ok {
+  background: #e7fff0;
+  color: #0a7a3b;
+}
+
+.newsletter__alert--err {
+  background: #ffe8e8;
+  color: red;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .newsletter__grid {
@@ -785,4 +805,45 @@ html,
     transform: none;
     margin-top: 18px;
   }
+}
+
+.field__input--error {
+  border-color: red;
+}
+
+.required {
+  color: red;
+}
+
+.field__error {
+  font-size: 11px;
+  font-weight: 800;
+  color: #ffe8e8;
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+.newsletter__alert {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.newsletter__alert-icon {
+  font-size: 14px;
+}
+
+.newsletter__alert--ok {
+  background: #e7fff0;
+  color: #0a7a3b;
+}
+
+.newsletter__alert--err {
+  background: #ffe8e8;
+  color: red;
 }
