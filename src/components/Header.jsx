@@ -16,7 +16,7 @@ export default function Header({ logo }) {
           <a className="nav__link" href="#parceiros">
             PARCEIROS
           </a>
-          <a className="nav__link" href="#contato">
+          <a className="nav__link" href="#newsletter">
             CONTATO
           </a>
         </nav>

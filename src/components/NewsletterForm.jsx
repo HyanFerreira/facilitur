@@ -122,7 +122,7 @@ export default function NewsletterForm({ foguete, apiBase }) {
   }
 
   return (
-    <section className="newsletter" id="contato">
+    <section className="newsletter" id="newsletter">
       <div className="container newsletter__grid">
         <div className="newsletter__left">
           <h2 className="newsletter__title">
