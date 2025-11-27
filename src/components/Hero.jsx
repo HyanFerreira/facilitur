@@ -17,7 +17,9 @@ export default function Hero({ heroImg }) {
             eventos da sua cidade
           </p>
 
-          <button className="hero__cta">Quero assinar a newsletter!</button>
+          <button className="hero__cta">
+            <a href="#newsletter">Quero assinar a newsletter!</a>
+          </button>
         </section>
 
         <section className="hero__right" aria-hidden="true">
