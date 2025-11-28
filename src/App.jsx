@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import CalendarioEventos from "./components/CalendarioEventos";
 import About from "./components/About";
 import Partners from "./components/Partners";
 import PartnerCTA from "./components/PartnerCTA";
@@ -53,6 +54,7 @@ function SiteHome() {
     <div className="page">
       <Header logo={logoHorizontal} />
       <Hero heroImg={heroBolasCelular} />
+      <CalendarioEventos />
       <About icons={aboutIcons} />
       <Partners partners={partnersList} />
       <PartnerCTA background={background} />
