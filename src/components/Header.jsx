@@ -1,3 +1,6 @@
+// src/components/Header.jsx
+import { Link } from "react-router-dom";
+
 export default function Header({ logo }) {
   return (
     <header className="header">
@@ -22,12 +25,12 @@ export default function Header({ logo }) {
         </nav>
 
         <div className="header__actions">
-          <a className="pill pill--primary" href="#admin">
+          <Link className="pill pill--primary" to="/admin/login">
             Portal do Administrador
-          </a>
-          <a className="pill pill--primary" href="#filiados">
-            Portal dos filiados
-          </a>
+          </Link>
+          <Link className="pill pill--primary" to="/filiado/login">
+            Portal dos Filiados
+          </Link>
         </div>
       </div>
     </header>
